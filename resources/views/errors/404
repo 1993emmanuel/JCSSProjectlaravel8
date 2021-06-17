@@ -1,0 +1,37 @@
+@auth
+	@extends('layouts.admin')
+	@section('content')
+		<div class="content-wrapper">
+			<div class="page-header"></div>
+			<div class="row">
+				<div class="col-12">
+					<h1 class="text-center text-bold text-uppercase text-danger p-5">
+						<i class="fa fa-exclamation-circle fa-5x" aria-hidden="true"></i>
+					</h1>
+					<h1 class="text-center text-bold text-uppercase text-danger">
+						lo siento lo que buscas no existe favor de mirar nuestro menu.
+					</h1>
+				</div>
+			</div>
+		</div>
+	@endsection
+@endauth
+
+@guest
+	@extends('layouts.guest')
+	@section('content')
+		<div class="content-wrapper">
+			<div class="page-header"></div>
+			<div class="row">
+				<div class="col-12">
+					<h1 class="text-center text-bold text-uppercase text-danger p-5">
+						<i class="fa fa-exclamation-circle fa-5x" aria-hidden="true"></i>
+					</h1>
+					<h1 class="text-center text-bold text-uppercase text-danger">
+						Error
+					</h1>
+				</div>
+			</div>
+		</div>
+	@endsection
+@endguest
